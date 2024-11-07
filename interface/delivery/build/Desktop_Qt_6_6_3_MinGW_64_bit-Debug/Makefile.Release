@@ -753,6 +753,10 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		C:/Qt/6.6.3/mingw_64/include/QtSql/QSqlQueryModel \
 		C:/Qt/6.6.3/mingw_64/include/QtSql/qsqlquerymodel.h \
 		C:/Qt/6.6.3/mingw_64/include/QtCore/qabstractitemmodel.h \
+		../../connection.h \
+		C:/Qt/6.6.3/mingw_64/include/QtSql/QSqlDatabase \
+		C:/Qt/6.6.3/mingw_64/include/QtSql/QSqlError \
+		C:/Qt/6.6.3/mingw_64/include/QtSql/qsqlerror.h \
 		C:/Qt/6.6.3/mingw_64/include/QtWidgets/QApplication \
 		C:/Qt/6.6.3/mingw_64/include/QtWidgets/qapplication.h \
 		C:/Qt/6.6.3/mingw_64/include/QtCore/qcoreapplication.h \
@@ -773,7 +777,11 @@ release/main.o: ../../main.cpp ../../mainwindow.h \
 		C:/Qt/6.6.3/mingw_64/include/QtCore/qpromise.h \
 		C:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication.h \
 		C:/Qt/6.6.3/mingw_64/include/QtGui/qinputmethod.h \
-		C:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h
+		C:/Qt/6.6.3/mingw_64/include/QtGui/qguiapplication_platform.h \
+		C:/Qt/6.6.3/mingw_64/include/QtWidgets/QMessageBox \
+		C:/Qt/6.6.3/mingw_64/include/QtWidgets/qmessagebox.h \
+		C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialog.h \
+		C:/Qt/6.6.3/mingw_64/include/QtWidgets/qdialogbuttonbox.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o ..\..\main.cpp
 
 release/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \

@@ -27,9 +27,9 @@ void MainWindow::on_addButton_clicked()
     QDate dateArrive = ui->dateArriveEdit->date();
     QDate dateSortie = ui->dateSortieEdit->date();
     QString ADDRESS = ui->ADDRESSLineEdit->text();
-    QString idProduit = ui->idProduitLineEdit->text();
+    int idProduit = ui->idProduitLineEdit->text().toInt();
 
-    livraison = Livraison(numSuiv, dateArrive, dateSortie, ADDRESS, idProduit);
+    livraison = Livraison(numSuiv, dateArrive, dateSortie, ADDRESS, idProduit );
 
     if (livraison.ajouter()) {
         QMessageBox::information(this, "Success", "Livraison added successfully.");
@@ -45,7 +45,7 @@ void MainWindow::on_modifyButton_clicked()
     QDate dateArrive = ui->dateArriveEdit->date();
     QDate dateSortie = ui->dateSortieEdit->date();
     QString ADDRESS = ui->ADDRESSLineEdit->text();
-    QString idProduit = ui->idProduitLineEdit->text();
+    int idProduit = ui->idProduitLineEdit->text().toInt();
 
     if (livraison.modifier(numSuiv, dateArrive, dateSortie, ADDRESS, idProduit)) {
         QMessageBox::information(this, "Success", "Livraison modified successfully.");
@@ -57,7 +57,7 @@ void MainWindow::on_modifyButton_clicked()
 
 void MainWindow::on_deleteButton_clicked()
 {
-    QString numSuiv = ui->numSuivLineEdit->text();
+    QString numSuiv = ui->recherche->text();
 
     if (livraison.supprimer(numSuiv)) {
         QMessageBox::information(this, "Success", "Livraison deleted successfully.");
@@ -66,5 +66,3 @@ void MainWindow::on_deleteButton_clicked()
         QMessageBox::warning(this, "Error", "Failed to delete livraison.");
     }
 }
-
-

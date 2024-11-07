@@ -68,6 +68,7 @@ public:
     QPushButton *pushButton_6;
     QPushButton *pushButton_7;
     QPushButton *searchButton;
+    QLineEdit *recherche;
     QPushButton *pushButton_2;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -244,9 +245,15 @@ public:
 "background-color: rgb(0, 170, 127);"));
         searchButton = new QPushButton(widget_2);
         searchButton->setObjectName("searchButton");
-        searchButton->setGeometry(QRect(70, 70, 681, 51));
+        searchButton->setGeometry(QRect(330, 90, 131, 31));
         searchButton->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 "border-radius:10px;"));
+        recherche = new QLineEdit(widget_2);
+        recherche->setObjectName("recherche");
+        recherche->setGeometry(QRect(120, 20, 571, 51));
+        recherche->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
+"border-radius:10px;\n"
+""));
         pushButton_2 = new QPushButton(widget);
         pushButton_2->setObjectName("pushButton_2");
         pushButton_2->setGeometry(QRect(20, 820, 83, 29));
@@ -414,7 +421,7 @@ public:
         label->setText(QString());
         deleteButton->setText(QCoreApplication::translate("MainWindow", "delete delivery ", nullptr));
         addButton->setText(QCoreApplication::translate("MainWindow", "add button ", nullptr));
-        modifyButton->setText(QCoreApplication::translate("MainWindow", "modify delivery", nullptr));
+        modifyButton->setText(QCoreApplication::translate("MainWindow", "Modify,Display ", nullptr));
         pushButton_6->setText(QCoreApplication::translate("MainWindow", "sort by date ", nullptr));
         pushButton_7->setText(QCoreApplication::translate("MainWindow", "E-mail", nullptr));
         searchButton->setText(QCoreApplication::translate("MainWindow", "search", nullptr));

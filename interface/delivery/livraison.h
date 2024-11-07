@@ -10,10 +10,10 @@ class Livraison {
 public:
     Livraison();
 
-    Livraison(QString NUM_SUIV, QDate DATE_ARRIVE, QDate DATE_SORTIE, QString ADDRESS, QString ID_PRODUIT);
+    Livraison(QString NUM_SUIV, QDate DATE_ARRIVE, QDate DATE_SORTIE, QString ADDRESS, int ID_PRODUIT);
 
     bool ajouter();
-    bool modifier(QString NUM_SUIV, QDate DATE_ARRIVE, QDate DATE_SORTIE, QString ADDRESS, QString ID_PRODUIT);
+    bool modifier(QString NUM_SUIV, QDate DATE_ARRIVE, QDate DATE_SORTIE, QString ADDRESS, int ID_PRODUIT);
     bool supprimer(QString num_suiv);
     QSqlQueryModel *afficher();
     Livraison rechercher(QString num_suiv);
@@ -23,21 +23,21 @@ public:
     QDate getDateArrive() const;
     QDate getDateSortie() const;
     QString getADDRESS() const;
-    QString getIdProduit() const;
+    int getIdProduit() const;
 
     // Setters
     void setNumSuiv(const QString &num_suiv);
     void setDateArrive(const QDate &date_arrive);
     void setDateSortie(const QDate &date_sortie);
     void setADDRESS(const QString &ADDRESS);
-    void setIdProduit(const QString &id_produit);
+    void setIdProduit(const int &id_produit);
 
 private:
     QString NUM_SUIV;
     QDate DATE_ARRIVE;
     QDate DATE_SORTIE;
     QString ADDRESS;
-    QString ID_PRODUIT;
+    int ID_PRODUIT;
 };
 
 #endif // LIVRAISON_H
