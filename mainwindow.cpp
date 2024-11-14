@@ -603,12 +603,7 @@ void MainWindow::on_pushButton_send_sms_clicked()
 void MainWindow::sendSms(const QString& toPhoneNumber, const QString& message)
 {
 
-    const QString accountSid = "AC1c953cd560cb86aceacf2542e9babdc4";
-    const QString authToken = "61a761aca7cca08c2b0d232197120efa";
-    const QString fromPhoneNumber = "+14124192354";
-
-
-    QUrl apiUrl("https://api.twilio.com/2010-04-01/Accounts/" + accountSid + "/Messages.json");
+    
 
     QNetworkAccessManager* manager = new QNetworkAccessManager(this);
     QNetworkRequest request(apiUrl);
