@@ -538,60 +538,6 @@ void MainWindow::tri() {
 
 
 
-QString formatPhoneNumber(const QString& phoneNumber) {
-    QString formattedNumber = phoneNumber.trimmed();
-    if (!formattedNumber.startsWith("+")) {
-        formattedNumber.prepend("+216");
-    }
-    return formattedNumber;
-}
-
-
-
-
-void MainWindow::on_pushButton_send_sms_clicked()
-{
-
-    QLineEdit* lineEditNumber = ui->widget->findChild<QWidget*>("stackedWidget")
-                                    ->findChild<QWidget*>("widget_2")
-                                    ->findChild<QWidget*>("stackedWidget_2")
-                                    ->findChild<QWidget*>("frame_20")
-                                    ->findChild<QLineEdit*>("lineEdit_number");
-
-    if (!lineEditNumber) {
-        qDebug() << "lineEdit_number not found!";
-        return;
-    }
-
-    QString toPhoneNumber = formatPhoneNumber(lineEditNumber->text());
-    qDebug() << "Formatted Phone Number: " << toPhoneNumber;
-
-
-    QLineEdit* lineEditMsg = ui->widget->findChild<QWidget*>("stackedWidget")
-                                 ->findChild<QWidget*>("widget_2")
-                                 ->findChild<QWidget*>("stackedWidget_2")
-                                 ->findChild<QWidget*>("frame_20")
-                                 ->findChild<QLineEdit*>("lineEdit_msg");
-
-    if (!lineEditMsg) {
-        qDebug() << "lineEdit_msg not found!";
-        return;
-    }
-
-    QString message = lineEditMsg->text();
-
-
-    if (toPhoneNumber.isEmpty() || message.isEmpty()) {
-        QMessageBox::warning(this, "Input Error", "Please enter both a phone number and a message.");
-        return;
-    }
-
-
-    sendSms(toPhoneNumber, message);
-}
-
-
-
 
 
 
