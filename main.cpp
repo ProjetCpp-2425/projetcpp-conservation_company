@@ -2,6 +2,8 @@
 #include <QApplication>
 #include <QMessageBox>
 #include "connection.h"
+#include <QProcessEnvironment>
+#include <QNetworkAccessManager>
 
 
 int main(int argc, char *argv[])
@@ -11,6 +13,7 @@ int main(int argc, char *argv[])
     connection c;
     bool test =c.createconnection();
     MainWindow w;
+
 
     if(test)
     {

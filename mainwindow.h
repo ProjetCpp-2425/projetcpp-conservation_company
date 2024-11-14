@@ -3,6 +3,15 @@
 #include"client.h"
 
 #include <QMainWindow>
+#include <QMainWindow>
+#include <QNetworkAccessManager>
+#include <QNetworkRequest>
+#include <QNetworkReply>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QtCharts/QChartView>
+#include <QtCharts/QPieSeries>
+#include <QtCharts/QPieSlice>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -29,6 +38,20 @@ private slots:
     void on_pushButton_ajouter_clicked();
     void on_pushButton_supprimer_clicked();
     void on_pushButton_modifier_clicked();
+    void on_pushButton_pdf_clicked();
+    void on_pushButton_chercher_clicked();
+    void tri();
+    void on_pushButton_send_sms_clicked();
+    void onSmsSent(QNetworkReply* reply);
+     void on_pushButton_stat_clicked(); // Slot for showing statistics
+
+
+
+
+
+
+
+
 
 
 
@@ -36,5 +59,11 @@ private slots:
 private:
     Ui::MainWindow *ui;
     client tmclient;
+    void sendSms(const QString& toPhoneNumber, const QString& message);
+
+
+
+
+
 };
 #endif // MAINWINDOW_H

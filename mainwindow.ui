@@ -1180,7 +1180,7 @@ border-radius:10px;</string>
           <x>10</x>
           <y>50</y>
           <width>1241</width>
-          <height>701</height>
+          <height>711</height>
          </rect>
         </property>
         <property name="styleSheet">
@@ -1214,193 +1214,6 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Welcome &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
-         </widget>
-         <widget class="QFrame" name="frame_14">
-          <property name="geometry">
-           <rect>
-            <x>960</x>
-            <y>70</y>
-            <width>271</width>
-            <height>401</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);
-border-color: rgb(0, 0, 0);</string>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Shape::Box</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Shadow::Plain</enum>
-          </property>
-          <widget class="QPushButton" name="pushButton_22">
-           <property name="geometry">
-            <rect>
-             <x>180</x>
-             <y>470</y>
-             <width>83</width>
-             <height>29</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 255, 255);
-
-color:white;
-border-radius:8px;</string>
-           </property>
-           <property name="text">
-            <string>Save</string>
-           </property>
-          </widget>
-          <widget class="QTextEdit" name="textEdit_23">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>261</width>
-             <height>111</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(0, 0, 0);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0));</string>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-           <property name="html">
-            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Send Message&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QFrame" name="frame_20">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>40</y>
-             <width>251</width>
-             <height>351</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(255, 244, 226);
-background-color: rgb(2, 197, 148);
-border-color: rgb(0, 0, 0);</string>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Shape::Box</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Shadow::Plain</enum>
-           </property>
-           <widget class="QTextEdit" name="textEdit_90">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>20</y>
-              <width>111</width>
-              <height>41</height>
-             </rect>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-            <property name="html">
-             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:700; color:#000000;&quot;&gt;Number&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-           </widget>
-           <widget class="QLineEdit" name="lineEdit_6">
-            <property name="geometry">
-             <rect>
-              <x>90</x>
-              <y>20</y>
-              <width>131</width>
-              <height>31</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(53, 53, 53);
-color: rgb(255, 255, 255);
-border-radius:10px;</string>
-            </property>
-           </widget>
-           <widget class="QListWidget" name="listWidget_2">
-            <property name="geometry">
-             <rect>
-              <x>20</x>
-              <y>170</y>
-              <width>201</width>
-              <height>91</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(39, 39, 39);</string>
-            </property>
-           </widget>
-           <widget class="QTextEdit" name="textEdit_24">
-            <property name="geometry">
-             <rect>
-              <x>10</x>
-              <y>90</y>
-              <width>231</width>
-              <height>111</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">color: rgb(0, 0, 0);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0));</string>
-            </property>
-            <property name="readOnly">
-             <bool>true</bool>
-            </property>
-            <property name="html">
-             <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Enter your message&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-            </property>
-           </widget>
-           <widget class="QPushButton" name="pushButton_25">
-            <property name="geometry">
-             <rect>
-              <x>70</x>
-              <y>280</y>
-              <width>83</width>
-              <height>29</height>
-             </rect>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: rgb(36, 36, 36);
-color:white;
-border-radius:8px;</string>
-            </property>
-            <property name="text">
-             <string>Send</string>
-            </property>
-           </widget>
-          </widget>
          </widget>
          <widget class="QFrame" name="frame_4">
           <property name="geometry">
@@ -1747,8 +1560,8 @@ border-radius:8px;</string>
          <widget class="QTableView" name="cc">
           <property name="geometry">
            <rect>
-            <x>30</x>
-            <y>500</y>
+            <x>10</x>
+            <y>520</y>
             <width>771</width>
             <height>181</height>
            </rect>
@@ -1761,7 +1574,7 @@ border-radius:8px;</string>
           <property name="geometry">
            <rect>
             <x>820</x>
-            <y>500</y>
+            <y>510</y>
             <width>401</width>
             <height>191</height>
            </rect>
@@ -1819,7 +1632,7 @@ hr { height: 1px; border-width: 0; }
 li.unchecked::marker { content: &quot;\2610&quot;; }
 li.checked::marker { content: &quot;\2612&quot;; }
 &lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Delete  client&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt; client&lt;/span&gt;&lt;/p&gt;
 &lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
@@ -1865,10 +1678,10 @@ border-radius:8px;</string>
            <widget class="QTextEdit" name="textEdit_17">
             <property name="geometry">
              <rect>
-              <x>0</x>
+              <x>10</x>
               <y>10</y>
-              <width>91</width>
-              <height>81</height>
+              <width>61</width>
+              <height>71</height>
              </rect>
             </property>
             <property name="styleSheet">
@@ -1892,9 +1705,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
            <widget class="QLineEdit" name="line_supp">
             <property name="geometry">
              <rect>
-              <x>60</x>
+              <x>70</x>
               <y>20</y>
-              <width>221</width>
+              <width>231</width>
               <height>31</height>
              </rect>
             </property>
@@ -1921,10 +1734,10 @@ background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgb
            <widget class="QPushButton" name="pushButton_supprimer">
             <property name="geometry">
              <rect>
-              <x>120</x>
-              <y>70</y>
+              <x>10</x>
+              <y>90</y>
               <width>101</width>
-              <height>51</height>
+              <height>41</height>
              </rect>
             </property>
             <property name="styleSheet">
@@ -1934,6 +1747,42 @@ border-radius:8px;</string>
             </property>
             <property name="text">
              <string>Delete</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_chercher">
+            <property name="geometry">
+             <rect>
+              <x>120</x>
+              <y>90</y>
+              <width>101</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(36, 36, 36);
+color:white;
+border-radius:8px;</string>
+            </property>
+            <property name="text">
+             <string>Search</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="pushButton_tri">
+            <property name="geometry">
+             <rect>
+              <x>230</x>
+              <y>90</y>
+              <width>101</width>
+              <height>41</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: rgb(36, 36, 36);
+color:white;
+border-radius:8px;</string>
+            </property>
+            <property name="text">
+             <string>TRI</string>
             </property>
            </widget>
           </widget>
@@ -1969,9 +1818,9 @@ li.checked::marker { content: &quot;\2612&quot;; }
          <widget class="QFrame" name="frame_22">
           <property name="geometry">
            <rect>
-            <x>470</x>
+            <x>440</x>
             <y>80</y>
-            <width>451</width>
+            <width>411</width>
             <height>391</height>
            </rect>
           </property>
@@ -2309,6 +2158,180 @@ border-radius:8px;</string>
            </property>
           </widget>
          </widget>
+         <widget class="QTextEdit" name="textEdit_23">
+          <property name="geometry">
+           <rect>
+            <x>880</x>
+            <y>40</y>
+            <width>171</width>
+            <height>91</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: rgb(0, 0, 0);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0));</string>
+          </property>
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+          <property name="html">
+           <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Send Message&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+         </widget>
+         <widget class="QFrame" name="frame_20">
+          <property name="geometry">
+           <rect>
+            <x>870</x>
+            <y>90</y>
+            <width>291</width>
+            <height>301</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(6, 195, 148);
+border-color: rgb(0, 0, 0);</string>
+          </property>
+          <property name="frameShape">
+           <enum>QFrame::Shape::Box</enum>
+          </property>
+          <property name="frameShadow">
+           <enum>QFrame::Shadow::Plain</enum>
+          </property>
+          <widget class="QLineEdit" name="lineEdit_number">
+           <property name="geometry">
+            <rect>
+             <x>80</x>
+             <y>40</y>
+             <width>181</width>
+             <height>31</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(53, 53, 53);
+color: rgb(255, 255, 255);
+border-radius:10px;</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_22">
+           <property name="geometry">
+            <rect>
+             <x>180</x>
+             <y>470</y>
+             <width>83</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 255);
+
+color:white;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string>Save</string>
+           </property>
+          </widget>
+          <widget class="QTextEdit" name="textEdit_24">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>120</y>
+             <width>281</width>
+             <height>101</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Enter your message&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_send_sms">
+           <property name="geometry">
+            <rect>
+             <x>110</x>
+             <y>260</y>
+             <width>83</width>
+             <height>29</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(36, 36, 36);
+color:white;
+border-radius:8px;</string>
+           </property>
+           <property name="text">
+            <string>Send</string>
+           </property>
+          </widget>
+          <widget class="QLineEdit" name="lineEdit_msg">
+           <property name="geometry">
+            <rect>
+             <x>40</x>
+             <y>170</y>
+             <width>231</width>
+             <height>81</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(53, 53, 53);
+color: rgb(255, 255, 255);
+border-radius:10px;</string>
+           </property>
+          </widget>
+          <widget class="QTextEdit" name="textEdit_48">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>40</y>
+             <width>121</width>
+             <height>111</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color: rgb(0, 0, 0);
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0));</string>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+           <property name="html">
+            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+hr { height: 1px; border-width: 0; }
+li.unchecked::marker { content: &quot;\2610&quot;; }
+li.checked::marker { content: &quot;\2612&quot;; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Number&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+          </widget>
+         </widget>
         </widget>
         <widget class="QWidget" name="chatbot">
          <widget class="QTextEdit" name="textEdit_19">
@@ -2354,10 +2377,10 @@ li.checked::marker { content: &quot;\2612&quot;; }
          <widget class="QFrame" name="frame_38">
           <property name="geometry">
            <rect>
-            <x>10</x>
-            <y>40</y>
-            <width>1261</width>
-            <height>681</height>
+            <x>0</x>
+            <y>50</y>
+            <width>1231</width>
+            <height>641</height>
            </rect>
           </property>
           <property name="styleSheet">
@@ -2392,7 +2415,7 @@ border-radius:8px;</string>
           <widget class="QTextEdit" name="textEdit_20">
            <property name="geometry">
             <rect>
-             <x>50</x>
+             <x>40</x>
              <y>30</y>
              <width>561</width>
              <height>221</height>
@@ -2417,13 +2440,13 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:36pt; font-weight:700;&quot;&gt;What would like to know?&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QLineEdit" name="lineEdit_4">
+          <widget class="QLineEdit" name="lineEdit_chatbot_query">
            <property name="geometry">
             <rect>
              <x>60</x>
              <y>540</y>
              <width>1031</width>
-             <height>121</height>
+             <height>101</height>
             </rect>
            </property>
            <property name="styleSheet">
@@ -2462,354 +2485,107 @@ li.checked::marker { content: &quot;\2612&quot;; }
 &lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:700;&quot;&gt;Ask whatever you want.....&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
            </property>
           </widget>
-          <widget class="QGraphicsView" name="graphicsView_9">
+          <widget class="QTextEdit" name="textEdit_chatbot_response">
+           <property name="geometry">
+            <rect>
+             <x>70</x>
+             <y>270</y>
+             <width>321</width>
+             <height>121</height>
+            </rect>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(220, 220, 220);</string>
+           </property>
+          </widget>
+          <widget class="QPushButton" name="pushButton_chatbot_send">
            <property name="geometry">
             <rect>
              <x>1030</x>
-             <y>610</y>
-             <width>31</width>
-             <height>41</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-image: url(:/new/prefix1/envoyer.png);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 4));</string>
-           </property>
-          </widget>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="statistique">
-         <widget class="QFrame" name="frame_18">
-          <property name="geometry">
-           <rect>
-            <x>860</x>
-            <y>20</y>
-            <width>371</width>
-            <height>411</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 244, 226);
-background-color: rgb(36, 36, 36);
-background-color: rgb(2, 197, 148);
-border-color: rgb(0, 0, 0);
-border-radius:30px;</string>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Shape::StyledPanel</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Shadow::Raised</enum>
-          </property>
-          <widget class="QTextEdit" name="textEdit_2">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>10</y>
-             <width>251</width>
-             <height>101</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(0, 0, 0);</string>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-           <property name="html">
-            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700;&quot;&gt;Analytics by Client type&lt;/span&gt;&lt;/p&gt;
-&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:700;&quot;&gt;&lt;br /&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QGraphicsView" name="graphicsView_3">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>50</y>
-             <width>161</width>
-             <height>141</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-image: url(:/new/prefix1/stat-removebg-preview.png);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0));</string>
-           </property>
-          </widget>
-          <widget class="QGraphicsView" name="graphicsView_4">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>210</y>
+             <y>580</y>
              <width>41</width>
-             <height>151</height>
+             <height>29</height>
             </rect>
            </property>
            <property name="styleSheet">
-            <string notr="true">border-image: url(:/new/prefix1/stat2-removebg-preview.png);
-background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0));</string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QFrame" name="frame_19">
-          <property name="geometry">
-           <rect>
-            <x>70</x>
-            <y>510</y>
-            <width>581</width>
-            <height>161</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 244, 226);
-background-color: rgb(2, 197, 148);
-border-color: rgb(0, 0, 0);
-border-radius:30px;</string>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Shape::StyledPanel</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Shadow::Raised</enum>
-          </property>
-          <widget class="QLineEdit" name="lineEdit_33">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>400</y>
-             <width>251</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(104, 104, 104);
-border-radius:10px;</string>
-           </property>
-           <property name="text">
-            <string>Text</string>
-           </property>
-          </widget>
-          <widget class="QGraphicsView" name="graphicsView_8">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>20</y>
-             <width>241</width>
-             <height>141</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-image: url(:/new/prefix1/stat3JPG-removebg-preview.png);</string>
-           </property>
-          </widget>
-          <widget class="QTextEdit" name="textEdit_18">
-           <property name="geometry">
-            <rect>
-             <x>260</x>
-             <y>10</y>
-             <width>121</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(0, 0, 0);</string>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-           <property name="html">
-            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700;&quot;&gt;Statistic clients&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-         </widget>
-         <widget class="QFrame" name="frame_39">
-          <property name="geometry">
-           <rect>
-            <x>880</x>
-            <y>490</y>
-            <width>371</width>
-            <height>211</height>
-           </rect>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: rgb(33, 33, 33);
-border-radius:30px;</string>
-          </property>
-          <property name="frameShape">
-           <enum>QFrame::Shape::StyledPanel</enum>
-          </property>
-          <property name="frameShadow">
-           <enum>QFrame::Shadow::Raised</enum>
-          </property>
-          <widget class="QLineEdit" name="lineEdit_34">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>400</y>
-             <width>251</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(104, 104, 104);
-border-radius:10px;</string>
-           </property>
-           <property name="text">
-            <string>Text</string>
-           </property>
-          </widget>
-          <widget class="QTextEdit" name="textEdit_25">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>20</y>
-             <width>151</width>
-             <height>61</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(0, 0, 0);</string>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-           <property name="html">
-            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700; color:#ffffff;&quot;&gt;Download your report&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QGraphicsView" name="graphicsView_11">
-           <property name="geometry">
-            <rect>
-             <x>220</x>
-             <y>30</y>
-             <width>131</width>
-             <height>141</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-image: url(:/new/prefix1/report_1055644.png);</string>
-           </property>
-          </widget>
-          <widget class="QPushButton" name="pushButton_3">
-           <property name="geometry">
-            <rect>
-             <x>60</x>
-             <y>140</y>
-             <width>83</width>
-             <height>51</height>
-            </rect>
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 0));</string>
            </property>
            <property name="text">
             <string/>
            </property>
            <property name="icon">
             <iconset resource="images.qrc">
-             <normaloff>:/new/prefix1/file.png</normaloff>:/new/prefix1/file.png</iconset>
+             <normaloff>:/new/prefix1/envoyer.png</normaloff>:/new/prefix1/envoyer.png</iconset>
            </property>
            <property name="iconSize">
             <size>
-             <width>40</width>
-             <height>40</height>
+             <width>30</width>
+             <height>30</height>
             </size>
            </property>
           </widget>
          </widget>
-         <widget class="QFrame" name="frame_40">
+        </widget>
+        <widget class="QWidget" name="statistique">
+         <widget class="QPushButton" name="pushButton_stat">
           <property name="geometry">
            <rect>
-            <x>50</x>
-            <y>60</y>
-            <width>431</width>
-            <height>331</height>
+            <x>550</x>
+            <y>650</y>
+            <width>111</width>
+            <height>41</height>
            </rect>
           </property>
           <property name="styleSheet">
-           <string notr="true">background-color: rgb(255, 255, 255);
-border-color: rgb(0, 0, 0);
-border-radius:30px;</string>
+           <string notr="true">background-color: rgb(22, 22, 22);
+color:white;
+
+border-radius:12px;
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
           </property>
-          <property name="frameShape">
-           <enum>QFrame::Shape::StyledPanel</enum>
+          <property name="text">
+           <string>show</string>
           </property>
-          <property name="frameShadow">
-           <enum>QFrame::Shadow::Raised</enum>
+         </widget>
+         <widget class="QWidget" name="stat" native="true">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>30</y>
+            <width>401</width>
+            <height>411</height>
+           </rect>
           </property>
-          <widget class="QLineEdit" name="lineEdit_35">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>400</y>
-             <width>251</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: rgb(104, 104, 104);
-border-radius:10px;</string>
-           </property>
-           <property name="text">
-            <string>Text</string>
-           </property>
-          </widget>
-          <widget class="QTextEdit" name="textEdit_47">
-           <property name="geometry">
-            <rect>
-             <x>110</x>
-             <y>10</y>
-             <width>221</width>
-             <height>41</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">color: rgb(0, 0, 0);</string>
-           </property>
-           <property name="readOnly">
-            <bool>true</bool>
-           </property>
-           <property name="html">
-            <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
-&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
-p, li { white-space: pre-wrap; }
-hr { height: 1px; border-width: 0; }
-li.unchecked::marker { content: &quot;\2610&quot;; }
-li.checked::marker { content: &quot;\2612&quot;; }
-&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
-&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:16pt; font-weight:700;&quot;&gt;Top 5 Entreprise&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-           </property>
-          </widget>
-          <widget class="QGraphicsView" name="graphicsView_12">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>80</y>
-             <width>371</width>
-             <height>251</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">border-image: url(:/new/prefix1/stat5-removebg-preview.png);</string>
-           </property>
-          </widget>
+         </widget>
+         <widget class="QWidget" name="stat_3" native="true">
+          <property name="geometry">
+           <rect>
+            <x>760</x>
+            <y>310</y>
+            <width>471</width>
+            <height>391</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QWidget" name="stat_4" native="true">
+          <property name="geometry">
+           <rect>
+            <x>440</x>
+            <y>20</y>
+            <width>791</width>
+            <height>281</height>
+           </rect>
+          </property>
+         </widget>
+         <widget class="QWidget" name="stat_2" native="true">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>450</y>
+            <width>471</width>
+            <height>251</height>
+           </rect>
+          </property>
          </widget>
         </widget>
        </widget>
@@ -2833,7 +2609,7 @@ font: 900 9pt &quot;Segoe UI Black&quot;;</string>
          <string>ChatBot</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="pushButton_13">
+       <widget class="QPushButton" name="pushButon_statistic">
         <property name="geometry">
          <rect>
           <x>610</x>
@@ -2907,12 +2683,36 @@ border-radius:10px;</string>
          <string>search</string>
         </property>
        </widget>
+       <widget class="QPushButton" name="pushButton_pdf">
+        <property name="geometry">
+         <rect>
+          <x>980</x>
+          <y>10</y>
+          <width>41</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="images.qrc">
+          <normaloff>:/new/prefix1/file.png</normaloff>:/new/prefix1/file.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>35</width>
+          <height>35</height>
+         </size>
+        </property>
+       </widget>
        <zorder>stackedWidget_2</zorder>
        <zorder>pushButton_16</zorder>
-       <zorder>pushButton_13</zorder>
+       <zorder>pushButon_statistic</zorder>
        <zorder>pushButton_5</zorder>
        <zorder>lineEdit_24</zorder>
        <zorder>graphicsView_13</zorder>
+       <zorder>pushButton_pdf</zorder>
       </widget>
      </widget>
      <widget class="QWidget" name="Login">
@@ -3084,7 +2884,7 @@ color:white;</string>
          <string/>
         </property>
         <property name="pixmap">
-         <pixmap>../../Desktop/Downloads/git-removebg-preview.png</pixmap>
+         <pixmap>../Downloads/git-removebg-preview.png</pixmap>
         </property>
         <property name="scaledContents">
          <bool>true</bool>
@@ -4173,6 +3973,7 @@ border-radius:8px;</string>
 border-radius:10px;
 font-size:15px;
 color:black;
+font: 900 9pt &quot;Segoe UI Black&quot;;
 </string>
       </property>
       <property name="text">
@@ -4207,6 +4008,7 @@ background-color: rgb(217, 217, 255);
 border-radius:10px;
 font-size:15px;
 color:black;
+font: 900 9pt &quot;Segoe UI Black&quot;;
 </string>
       </property>
       <property name="text">
@@ -4242,7 +4044,8 @@ color:black;
        <string notr="true">background-color: rgb(217, 217, 255);
 color:Black;
 border-radius:10px;
-font-size:15px;</string>
+font-size:15px;
+font: 900 9pt &quot;Segoe UI Black&quot;;</string>
       </property>
       <property name="text">
        <string>Livraison</string>
@@ -4379,6 +4182,7 @@ background-color: rgb(217, 217, 255);
 border-radius:10px;
 font-size:15px;
 color:black;
+font: 900 9pt &quot;Segoe UI Black&quot;;
 </string>
       </property>
       <property name="text">
@@ -4415,6 +4219,7 @@ color:black;
 border-radius:10px;
 font-size:15px;
 color:black;
+font: 900 9pt &quot;Segoe UI Black&quot;;
 </string>
       </property>
       <property name="text">
@@ -4442,18 +4247,130 @@ color:black;
  </resources>
  <connections>
   <connection>
-   <sender>pushButton_17</sender>
+   <sender>pushButton_18</sender>
    <signal>clicked()</signal>
-   <receiver>line_add</receiver>
+   <receiver>line_add_2</receiver>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>389</x>
-     <y>521</y>
+     <x>918</x>
+     <y>528</y>
     </hint>
     <hint type="destinationlabel">
-     <x>392</x>
-     <y>470</y>
+     <x>816</x>
+     <y>473</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_17</sender>
+   <signal>clicked()</signal>
+   <receiver>id_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>433</x>
+     <y>544</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>335</x>
+     <y>227</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>line_type_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>932</x>
+     <y>520</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>948</x>
+     <y>462</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_17</sender>
+   <signal>clicked()</signal>
+   <receiver>line_prenom</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>421</x>
+     <y>510</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>513</x>
+     <y>282</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_17</sender>
+   <signal>clicked()</signal>
+   <receiver>line_nom</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>369</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>243</x>
+     <y>280</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_17</sender>
+   <signal>clicked()</signal>
+   <receiver>line_email</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>425</x>
+     <y>542</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>523</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>line_prenom_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>960</x>
+     <y>546</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>985</x>
+     <y>277</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>id_4</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>907</x>
+     <y>540</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>737</x>
+     <y>226</y>
     </hint>
    </hints>
   </connection>
@@ -4492,144 +4409,16 @@ color:black;
   <connection>
    <sender>pushButton_17</sender>
    <signal>clicked()</signal>
-   <receiver>line_nom</receiver>
+   <receiver>line_add</receiver>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>369</x>
-     <y>542</y>
+     <x>389</x>
+     <y>521</y>
     </hint>
     <hint type="destinationlabel">
-     <x>243</x>
-     <y>280</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_17</sender>
-   <signal>clicked()</signal>
-   <receiver>id_2</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>433</x>
-     <y>544</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>335</x>
-     <y>227</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_17</sender>
-   <signal>clicked()</signal>
-   <receiver>line_email</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>425</x>
-     <y>542</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>523</x>
-     <y>355</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_17</sender>
-   <signal>clicked()</signal>
-   <receiver>line_prenom</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>421</x>
-     <y>510</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>513</x>
-     <y>282</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_18</sender>
-   <signal>clicked()</signal>
-   <receiver>line_type_2</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>932</x>
-     <y>520</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>948</x>
-     <y>462</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_18</sender>
-   <signal>clicked()</signal>
-   <receiver>line_add_2</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>918</x>
-     <y>528</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>816</x>
-     <y>473</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_18</sender>
-   <signal>clicked()</signal>
-   <receiver>line_tel_2</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>903</x>
-     <y>544</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>764</x>
-     <y>354</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_18</sender>
-   <signal>clicked()</signal>
-   <receiver>line_email_2</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>967</x>
-     <y>532</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>985</x>
-     <y>355</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>pushButton_18</sender>
-   <signal>clicked()</signal>
-   <receiver>line_prenom_2</receiver>
-   <slot>clear()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>960</x>
-     <y>546</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>985</x>
-     <y>277</y>
+     <x>392</x>
+     <y>470</y>
     </hint>
    </hints>
   </connection>
@@ -4652,16 +4441,32 @@ color:black;
   <connection>
    <sender>pushButton_18</sender>
    <signal>clicked()</signal>
-   <receiver>id_4</receiver>
+   <receiver>line_email_2</receiver>
    <slot>clear()</slot>
    <hints>
     <hint type="sourcelabel">
-     <x>907</x>
-     <y>540</y>
+     <x>967</x>
+     <y>532</y>
     </hint>
     <hint type="destinationlabel">
-     <x>737</x>
-     <y>226</y>
+     <x>985</x>
+     <y>355</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pushButton_18</sender>
+   <signal>clicked()</signal>
+   <receiver>line_tel_2</receiver>
+   <slot>clear()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>903</x>
+     <y>544</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>764</x>
+     <y>354</y>
     </hint>
    </hints>
   </connection>

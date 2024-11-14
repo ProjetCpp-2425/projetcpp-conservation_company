@@ -84,5 +84,3 @@ bool client::modifier(int code_client, QString nom, QString prenom, QString adre
 }
 
 
-
-
