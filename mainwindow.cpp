@@ -51,6 +51,7 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+, networkManager(new QNetworkAccessManager(this))
 
 {
     ui->setupUi(this);
@@ -65,6 +66,13 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 //ai
+
+    connect(ui->pushButton_chatbot_query, &QPushButton::clicked, this, &MainWindow::on_pushButton_chatbot_query_clicked);
+    connect(networkManager, &QNetworkAccessManager::finished, this, &MainWindow::handleChatbotReply);
+
+
+
+
 
     connect(ui->pushButton_send_sms, &QPushButton::clicked, this, &MainWindow::on_pushButton_send_sms_clicked);
 
@@ -84,6 +92,7 @@ connect(ui->pushButton_pdf, &QPushButton::clicked, this, &MainWindow::on_pushBut
     ui->stackedWidget_2->addWidget(ui->clients);
     ui->stackedWidget_2->addWidget(ui->statistique);
     ui->stackedWidget_2->addWidget(ui->chatbot);
+    ui->stackedWidget_2->addWidget(ui->Arduino);
 
 
     connect(ui->pushButton_user, &QPushButton::clicked, this, &MainWindow::user);
@@ -95,6 +104,7 @@ connect(ui->pushButton_pdf, &QPushButton::clicked, this, &MainWindow::on_pushBut
     connect(ui->pushButton_5, &QPushButton::clicked, this, &MainWindow::clients);
     connect(ui->pushButon_statistic, &QPushButton::clicked, this, &MainWindow::statistique);
     connect(ui->pushButton_16, &QPushButton::clicked, this, &MainWindow::chatbot);
+    connect(ui->pushButton_24, &QPushButton::clicked, this, &MainWindow::Arduino);
 }
 
 
@@ -126,6 +136,11 @@ void MainWindow::statistique()
 void MainWindow::chatbot()
 {
     ui->stackedWidget_2->setCurrentIndex(2);
+}
+
+void MainWindow::Arduino()
+{
+    ui->stackedWidget_2->setCurrentIndex(3);
 }
 
 
@@ -480,24 +495,50 @@ void MainWindow::on_pushButton_pdf_clicked()
 void MainWindow::on_pushButton_chercher_clicked()
 {
 
-    int code_client = ui->widget->findChild<QWidget*>("stackedWidget")
-                          ->findChild<QWidget*>("widget_2")
-                          ->findChild<QWidget*>("stackedWidget_2")
-                          ->findChild<QWidget*>("frame_6")
-                          ->findChild<QLineEdit*>("line_supp")->text().toInt();
+    QString searchInput = ui->widget->findChild<QWidget*>("stackedWidget")
+                              ->findChild<QWidget*>("widget_2")
+                              ->findChild<QWidget*>("stackedWidget_2")
+                              ->findChild<QWidget*>("frame_6")
+                              ->findChild<QLineEdit*>("line_supp")->text();
 
+
+    if (searchInput.isEmpty()) {
+        QMessageBox::warning(this, "Input Error", "Please enter a search query.");
+        return;
+    }
 
     QSqlQuery query;
-    query.prepare("SELECT * FROM client WHERE code_client = :code_client");
-    query.bindValue(":code_client", code_client);
+    QString queryStr;
+
+
+    bool isNumeric;
+    int code_client = searchInput.toInt(&isNumeric);
+
+    if (isNumeric) {
+
+        queryStr = "SELECT * FROM client WHERE code_client = :code_client";
+        query.prepare(queryStr);
+        query.bindValue(":code_client", code_client);
+    } else {
+
+        queryStr = R"(
+            SELECT * FROM client
+            WHERE LOWER(nom) LIKE LOWER(:search)
+            OR LOWER(type) LIKE LOWER(:search)
+        )";
+        query.prepare(queryStr);
+        query.bindValue(":search", "%" + searchInput + "%");
+    }
+
+
+    qDebug() << "Executing query:" << queryStr;
 
     if (query.exec()) {
-
-        QSqlQueryModel *model = new QSqlQueryModel();
+        QSqlQueryModel* model = new QSqlQueryModel();
         model->setQuery(query);
 
+        // Check if results exist
         if (model->rowCount() > 0) {
-
             QTableView* tableView = ui->widget->findChild<QTableView*>("cc");
             if (tableView) {
                 tableView->setModel(model);
@@ -505,12 +546,14 @@ void MainWindow::on_pushButton_chercher_clicked()
                 qDebug() << "tableView 'cc' not found!";
             }
         } else {
-            QMessageBox::information(this, "No Results", "No client found with the given ID.");
+            QMessageBox::information(this, "No Results", "No client found matching the search query.");
         }
     } else {
-        QMessageBox::critical(this, "Search Error", "Failed to execute search query.");
+
+        QMessageBox::critical(this, "Search Error", "Failed to execute search query: " );
     }
 }
+
 
 
 
@@ -539,11 +582,18 @@ void MainWindow::tri() {
 
 
 
+QString formatPhoneNumber(const QString& phoneNumber) {
+    QString formattedNumber = phoneNumber.trimmed();
+    if (!formattedNumber.startsWith("+")) {
+        formattedNumber.prepend("+216");
+    }
+    return formattedNumber;
+}
 
 
 
 
-
+//////////////////////////////////
 
 
 
@@ -666,3 +716,83 @@ void MainWindow::on_pushButton_stat_clicked() {
 
     ui->stackedWidget_2->setCurrentIndex(1);
 }
+
+
+
+
+
+void MainWindow::on_pushButton_chatbot_query_clicked()
+{
+    QString query = ui->lineEdit_chatbot_query->text();
+
+    if (query.isEmpty()) {
+        QMessageBox::warning(this, "Input Error", "Please enter a query.");
+        return;
+    }
+
+    QJsonObject json;
+    json["model"] = "mistral";
+
+    QJsonObject message;
+    message["role"] = "user";
+    message["content"] = query;
+
+    QJsonArray messages;
+    messages.append(message);
+
+    json["messages"] = messages;
+
+    QJsonDocument doc(json);
+
+    QUrl url("http://localhost:11434/v1/chat/completions");
+    QNetworkRequest request(url);
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+
+    // Prevent multiple connections
+    disconnect(networkManager, &QNetworkAccessManager::finished, this, &MainWindow::handleChatbotReply);
+    connect(networkManager, &QNetworkAccessManager::finished, this, &MainWindow::handleChatbotReply);
+
+    networkManager->post(request, doc.toJson());
+}
+
+void MainWindow::handleChatbotReply(QNetworkReply* reply)
+{
+    if (reply->error() != QNetworkReply::NoError) {
+        QString errorMsg = reply->errorString();
+        QMessageBox::critical(this, "Error", "Failed to communicate with Ollama server: " + errorMsg);
+        reply->deleteLater();
+        return;
+    }
+
+    QByteArray responseData = reply->readAll();
+    QJsonDocument jsonResponse = QJsonDocument::fromJson(responseData);
+
+    if (jsonResponse.isObject()) {
+        QJsonObject responseObject = jsonResponse.object();
+
+        if (responseObject.contains("choices") && responseObject["choices"].isArray()) {
+            QJsonArray choicesArray = responseObject["choices"].toArray();
+            if (!choicesArray.isEmpty() && choicesArray[0].isObject()) {
+                QJsonObject firstChoice = choicesArray[0].toObject();
+                if (firstChoice.contains("message") && firstChoice["message"].isObject()) {
+                    QJsonObject messageObject = firstChoice["message"].toObject();
+                    if (messageObject.contains("content") && messageObject["content"].isString()) {
+                        QString chatbotResponse = messageObject["content"].toString();
+                        ui->textEdit_chatbot_response->setText(chatbotResponse);
+                        reply->deleteLater();
+                        return;
+                    }
+                }
+            }
+        }
+    }
+
+    ui->textEdit_chatbot_response->setText("No valid response from chatbot.");
+    reply->deleteLater();
+}
+
+
+
+
+
+

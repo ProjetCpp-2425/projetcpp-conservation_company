@@ -33,6 +33,7 @@ public:
     void clients();
     void statistique();
     void chatbot();
+    void Arduino();
 
 private slots:
     void on_pushButton_ajouter_clicked();
@@ -43,8 +44,11 @@ private slots:
     void tri();
     void on_pushButton_send_sms_clicked();
     void onSmsSent(QNetworkReply* reply);
-     void on_pushButton_stat_clicked(); // Slot for showing statistics
+     void on_pushButton_stat_clicked(); 
 
+    // Chatbot-related slots
+     void on_pushButton_chatbot_query_clicked();  
+     void handleChatbotReply(QNetworkReply* reply);  
 
 
 
@@ -62,8 +66,8 @@ private:
     void sendSms(const QString& toPhoneNumber, const QString& message);
 
 
-
+    QNetworkAccessManager *networkManager; 
 
 
 };
-#endif // MAINWINDOW_H
+#endif 
