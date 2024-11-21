@@ -74,7 +74,9 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
-  
+    connect(ui->pushButton_send_sms, &QPushButton::clicked, this, &MainWindow::on_pushButton_send_sms_clicked);
+
+    connect(ui->pushButton_send_sms, &QPushButton::clicked, this, &MainWindow::on_pushButton_send_sms_clicked);
 
 
 connect(ui->pushButton_tri, &QPushButton::clicked, this, &MainWindow::tri);
