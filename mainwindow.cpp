@@ -74,9 +74,7 @@ MainWindow::MainWindow(QWidget *parent)
 
 
 
-    connect(ui->pushButton_send_sms, &QPushButton::clicked, this, &MainWindow::on_pushButton_send_sms_clicked);
-
-    connect(ui->pushButton_send_sms, &QPushButton::clicked, this, &MainWindow::on_pushButton_send_sms_clicked);
+  
 
 
 connect(ui->pushButton_tri, &QPushButton::clicked, this, &MainWindow::tri);
@@ -580,15 +578,6 @@ void MainWindow::tri() {
 }
 
 
-
-
-QString formatPhoneNumber(const QString& phoneNumber) {
-    QString formattedNumber = phoneNumber.trimmed();
-    if (!formattedNumber.startsWith("+")) {
-        formattedNumber.prepend("+216");
-    }
-    return formattedNumber;
-}
 
 
 
