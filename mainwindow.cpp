@@ -582,6 +582,146 @@ void MainWindow::tri() {
 
 
 
+QString formatPhoneNumber(const QString& phoneNumber) {
+    QString formattedNumber = phoneNumber.trimmed();
+    if (!formattedNumber.startsWith("+")) {
+        formattedNumber.prepend("+216"); // Change "+216" to your default country code if needed
+    }
+    return formattedNumber;
+}
+
+
+
+
+void MainWindow::on_pushButton_send_sms_clicked()
+{
+    // Access phone number from the UI
+    QLineEdit* lineEditNumber = ui->widget->findChild<QWidget*>("stackedWidget")
+                                    ->findChild<QWidget*>("widget_2")
+                                    ->findChild<QWidget*>("stackedWidget_2")
+                                    ->findChild<QWidget*>("frame_20")
+                                    ->findChild<QLineEdit*>("lineEdit_number");
+
+    if (!lineEditNumber) {
+        qDebug() << "lineEdit_number not found!";
+        return;
+    }
+
+    QString toPhoneNumber = formatPhoneNumber(lineEditNumber->text());
+    qDebug() << "Formatted Phone Number: " << toPhoneNumber;
+
+    // Access the message from QLineEdit located inside frame_20
+    QLineEdit* lineEditMsg = ui->widget->findChild<QWidget*>("stackedWidget")
+                                 ->findChild<QWidget*>("widget_2")
+                                 ->findChild<QWidget*>("stackedWidget_2")
+                                 ->findChild<QWidget*>("frame_20")
+                                 ->findChild<QLineEdit*>("lineEdit_msg");
+
+    if (!lineEditMsg) {
+        qDebug() << "lineEdit_msg not found!";
+        return;
+    }
+
+    QString message = lineEditMsg->text();
+
+    // Check if phone number and message are not empty
+    if (toPhoneNumber.isEmpty() || message.isEmpty()) {
+        QMessageBox::warning(this, "Input Error", "Please enter both a phone number and a message.");
+        return;
+    }
+
+    // Call the sendSms function to send the SMS
+    sendSms(toPhoneNumber, message);
+}
+
+
+
+
+
+
+
+
+
+
+
+void MainWindow::sendSms(const QString& toPhoneNumber, const QString& message)
+{
+
+    // Twilio credentials
+    const QString accountSid = "AC1c953cd560cb86aceacf2542e9babdc4";
+    const QString authToken = "61a761aca7cca08c2b0d232197120efa";
+    const QString fromPhoneNumber = "+14124192354";  // Replace with your Twilio number
+
+    // API endpoint
+    QUrl apiUrl("https://api.twilio.com/2010-04-01/Accounts/" + accountSid + "/Messages.json");
+
+
+    QNetworkAccessManager* manager = new QNetworkAccessManager(this);
+    QNetworkRequest request(apiUrl);
+
+
+
+    // QUrl apiUrl("https://api.twilio.com/2010-04-01/Accounts/" + accountSid + "/Messages.json");
+    QString authValue = "Basic " + QString(QByteArray(QString("%1:%2").arg(accountSid).arg(authToken).toUtf8()).toBase64());
+    request.setRawHeader("Authorization", authValue.toUtf8());
+
+
+    QHttpMultiPart* multiPart = new QHttpMultiPart(QHttpMultiPart::FormDataType);
+
+    QHttpPart toPart;
+    toPart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"To\""));
+    toPart.setBody(toPhoneNumber.toUtf8());
+
+    QHttpPart fromPart;
+    fromPart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"From\""));
+    fromPart.setBody(fromPhoneNumber.toUtf8());
+
+    QHttpPart bodyPart;
+    bodyPart.setHeader(QNetworkRequest::ContentDispositionHeader, QVariant("form-data; name=\"Body\""));
+    bodyPart.setBody(message.toUtf8());
+
+
+    multiPart->append(toPart);
+    multiPart->append(fromPart);
+    multiPart->append(bodyPart);
+
+
+    QNetworkReply* reply = manager->post(request, multiPart);
+    multiPart->setParent(reply);
+
+    connect(reply, &QNetworkReply::finished, [reply]() {
+        if (reply->error() == QNetworkReply::NoError) {
+            QMessageBox::information(nullptr, "Success", "SMS sent successfully!");
+        } else {
+            QByteArray responseData = reply->readAll();
+            QJsonDocument jsonResponse = QJsonDocument::fromJson(responseData);
+            QString errorMessage = jsonResponse["message"].toString();
+
+            qDebug() << "Error sending SMS:" << reply->errorString();
+            qDebug() << "Twilio response:" << jsonResponse;
+            QMessageBox::warning(nullptr, "Error", "Failed to send SMS: " + errorMessage);
+        }
+        reply->deleteLater();
+    });
+}
+void MainWindow::onSmsSent(QNetworkReply* reply)
+{
+    // Check if the SMS was sent successfully
+    if (reply->error() == QNetworkReply::NoError) {
+        QMessageBox::information(this, "Success", "SMS sent successfully!");
+    } else {
+        // Handle error and show the response from the Twilio API
+        QString error = reply->errorString();
+        qDebug() << "Error sending SMS: " << error;
+        QMessageBox::warning(this, "Error", "Failed to send SMS: " + error);
+    }
+
+    // Clean up after the reply
+    reply->deleteLater();
+}
+
+
+
 
 
 //////////////////////////////////
