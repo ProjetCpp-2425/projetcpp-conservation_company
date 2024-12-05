@@ -1,0 +1,1639 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1548</width>
+    <height>963</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>500</width>
+    <height>500</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1920</width>
+    <height>1080</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(201, 243, 255);</string>
+  </property>
+  <property name="iconSize">
+   <size>
+    <width>30</width>
+    <height>30</height>
+   </size>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1601</width>
+      <height>961</height>
+     </rect>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+border-radius:30px;
+background-color: rgb(50, 171, 135);</string>
+    </property>
+    <widget class="QPushButton" name="pushButton">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>200</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI Variable Display Semib</family>
+       <pointsize>-1</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/* Default Style for the Button */
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(200, 200, 200, 255));
+    color: Black;                        /* Black text */
+    border-radius: 10px;                 /* Rounded corners */
+    font-size: 15px;                     /* Font size */
+    padding: 8px 16px;                   /* Comfortable padding */
+    border: 2px solid rgba(150, 150, 150, 255); /* Light gray border */
+}
+
+/* Pressed Effect for the Button */
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(200, 200, 200, 255), stop:1 rgba(150, 150, 150, 255));
+    border-color: rgba(100, 100, 100, 255);    /* Darker border when pressed */
+    padding-top: 10px;                        /* Adjust padding to simulate press */
+    padding-bottom: 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string> Material</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="textEdit">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>60</y>
+       <width>101</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0));</string>
+     </property>
+     <property name="html">
+      <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:11pt; font-weight:700; color:#000000;&quot;&gt;Dashboard&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+    </widget>
+    <widget class="QWidget" name="widget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>200</x>
+       <y>0</y>
+       <width>1261</width>
+       <height>881</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">
+background-color: rgb(225, 225, 225);
+border-radius:30px;</string>
+     </property>
+     <widget class="QFrame" name="frame">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>220</y>
+        <width>321</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(255, 255, 255);
+background-color: rgb(50, 171, 135);</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::NoFrame</enum>
+      </property>
+      <widget class="QTextEdit" name="textEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>10</y>
+         <width>141</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:700; color:#000000;&quot;&gt;Add Material&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>230</y>
+         <width>101</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Quantity in Stock&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>120</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Recyclability&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>170</y>
+         <width>91</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Material Type&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_8">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>300</y>
+         <width>111</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Unit Cost&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_9">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>360</y>
+         <width>131</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Purchase date&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>240</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Style général pour le QLineEdit */
+QLineEdit {
+    background-color: #A8E6CF;             /* Vert menthe doux pour l'arrière-plan */
+    color: #004D40;                        /* Texte en vert foncé */
+    border: 1px solid #81C784;             /* Bordure vert doux */
+    border-radius: 5px;                    /* Coins arrondis */
+    padding: 5px 10px;                     /* Espacement interne pour le texte */
+    font-size: 14px;                       /* Taille de la police */
+}
+
+/* Effet de survol */
+QLineEdit:hover {
+    background-color: #98DBC6;             /* Vert menthe légèrement plus foncé au survol */
+    border: 1px solid #388E3C;             /* Bordure plus foncée au survol */
+}
+
+/* Style du texte de remplacement (placeholder) */
+QLineEdit::placeholder {
+    color: #66BB6A;                        /* Texte placeholder en vert clair */
+    font-style: italic;                    /* Italique pour le texte placeholder */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_5">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>300</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Style général pour le QLineEdit */
+QLineEdit {
+    background-color: #A8E6CF;             /* Vert menthe doux pour l'arrière-plan */
+    color: #004D40;                        /* Texte en vert foncé */
+    border: 1px solid #81C784;             /* Bordure vert doux */
+    border-radius: 5px;                    /* Coins arrondis */
+    padding: 5px 10px;                     /* Espacement interne pour le texte */
+    font-size: 14px;                       /* Taille de la police */
+}
+
+/* Effet de survol */
+QLineEdit:hover {
+    background-color: #98DBC6;             /* Vert menthe légèrement plus foncé au survol */
+    border: 1px solid #388E3C;             /* Bordure plus foncée au survol */
+}
+
+/* Style du texte de remplacement (placeholder) */
+QLineEdit::placeholder {
+    color: #66BB6A;                        /* Texte placeholder en vert clair */
+    font-style: italic;                    /* Italique pour le texte placeholder */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_6">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>70</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Style général pour le QLineEdit */
+QLineEdit {
+    background-color: #A8E6CF;             /* Vert menthe doux pour l'arrière-plan */
+    color: #004D40;                        /* Texte en vert foncé */
+    border: 1px solid #81C784;             /* Bordure vert doux */
+    border-radius: 5px;                    /* Coins arrondis */
+    padding: 5px 10px;                     /* Espacement interne pour le texte */
+    font-size: 14px;                       /* Taille de la police */
+}
+
+/* Effet de survol */
+QLineEdit:hover {
+    background-color: #98DBC6;             /* Vert menthe légèrement plus foncé au survol */
+    border: 1px solid #388E3C;             /* Bordure plus foncée au survol */
+}
+
+/* Style du texte de remplacement (placeholder) */
+QLineEdit::placeholder {
+    color: #66BB6A;                        /* Texte placeholder en vert clair */
+    font-style: italic;                    /* Italique pour le texte placeholder */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_3">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>180</y>
+         <width>181</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* General Style for QComboBox */
+QComboBox {
+    background-color: #A8E6CF;             /* Soft mint green for the main background */
+    color: #004D40;                        /* Dark teal text color */
+    border: 1px solid #81C784;             /* Soft green border */
+    border-radius: 5px;                    /* Rounded corners */
+    padding: 5px 10px;                     /* Inner padding for text */
+    font-size: 14px;                       /* Font size */
+}
+
+/* Dropdown Arrow Style */
+QComboBox::drop-down {
+    border: none;                          /* Remove border around the dropdown arrow */
+    background-color: #81C784;             /* Light green background for the arrow area */
+    border-top-right-radius: 5px;          /* Rounded top right corner */
+    border-bottom-right-radius: 5px;       /* Rounded bottom right corner */
+    width: 25px;                           /* Width of the dropdown area */
+}
+
+/* Arrow Icon */
+QComboBox::down-arrow {
+    image: url(&quot;:/icons/down-arrow.png&quot;);  /* Replace with the path to your arrow icon */
+    width: 12px;                           /* Icon width */
+    height: 12px;                          /* Icon height */
+}
+
+/* Style for Dropdown Items */
+QComboBox QAbstractItemView {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #E8F5E9, 
+                                      stop:1 #A5D6A7);  /* Light gradient green for dropdown */
+    border: 1px solid #66BB6A;             /* Medium green border */
+    selection-background-color: #66BB6A;   /* Highlighted green for selected item */
+    selection-color: white;                /* White text for selected item */
+    color: #004D40;                        /* Dark teal text for items */
+}
+
+/* Hover Effect */
+QComboBox:hover {
+    background-color: #98DBC6;             /* Slightly darker mint green on hover */
+    border: 1px solid #388E3C;             /* Darker border on hover */
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>Plastic</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Glass
+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Coated Paper</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>aluminium</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Corrugated cardboard</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QComboBox" name="comboBox_4">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>120</y>
+         <width>181</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* General Style for QComboBox */
+QComboBox {
+    background-color: #A8E6CF;             /* Soft mint green for the main background */
+    color: #004D40;                        /* Dark teal text color */
+    border: 1px solid #81C784;             /* Soft green border */
+    border-radius: 5px;                    /* Rounded corners */
+    padding: 5px 10px;                     /* Inner padding for text */
+    font-size: 14px;                       /* Font size */
+}
+
+/* Dropdown Arrow Style */
+QComboBox::drop-down {
+    border: none;                          /* Remove border around the dropdown arrow */
+    background-color: #81C784;             /* Light green background for the arrow area */
+    border-top-right-radius: 5px;          /* Rounded top right corner */
+    border-bottom-right-radius: 5px;       /* Rounded bottom right corner */
+    width: 25px;                           /* Width of the dropdown area */
+}
+
+/* Arrow Icon */
+QComboBox::down-arrow {
+    image: url(&quot;:/icons/down-arrow.png&quot;);  /* Replace with the path to your arrow icon */
+    width: 12px;                           /* Icon width */
+    height: 12px;                          /* Icon height */
+}
+
+/* Style for Dropdown Items */
+QComboBox QAbstractItemView {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #E8F5E9, 
+                                      stop:1 #A5D6A7);  /* Light gradient green for dropdown */
+    border: 1px solid #66BB6A;             /* Medium green border */
+    selection-background-color: #66BB6A;   /* Highlighted green for selected item */
+    selection-color: white;                /* White text for selected item */
+    color: #004D40;                        /* Dark teal text for items */
+}
+
+/* Hover Effect */
+QComboBox:hover {
+    background-color: #98DBC6;             /* Slightly darker mint green on hover */
+    border: 1px solid #388E3C;             /* Darker border on hover */
+}
+</string>
+       </property>
+       <item>
+        <property name="text">
+         <string>recyclable </string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>non-recyclable 
+</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string/>
+        </property>
+       </item>
+      </widget>
+      <widget class="QPushButton" name="add">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>420</y>
+         <width>161</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Segoe UI Variable Display Semib</family>
+         <pointsize>-1</pointsize>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Default Style for the Button */
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(200, 200, 200, 255));
+    color: Black;                        /* Black text */
+    border-radius: 10px;                 /* Rounded corners */
+    font-size: 15px;                     /* Font size */
+    padding: 8px 16px;                   /* Comfortable padding */
+    border: 2px solid rgba(150, 150, 150, 255); /* Light gray border */
+}
+
+/* Pressed Effect for the Button */
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(200, 200, 200, 255), stop:1 rgba(150, 150, 150, 255));
+    border-color: rgba(100, 100, 100, 255);    /* Darker border when pressed */
+    padding-top: 10px;                        /* Adjust padding to simulate press */
+    padding-bottom: 4px;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>CONFIRM</string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="dateEdit">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>360</y>
+         <width>181</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">/* Style général pour le QDateEdit */
+QDateEdit {
+    background-color: #A8E6CF;             /* Vert menthe doux pour l'arrière-plan */
+    color: #004D40;                        /* Texte en vert foncé */
+    border: 1px solid #81C784;             /* Bordure vert doux */
+    border-radius: 5px;                    /* Coins arrondis */
+    padding: 5px 10px;                     /* Espacement interne pour le texte */
+    font-size: 14px;                       /* Taille de la police */
+}
+
+/* Effet de survol pour QDateEdit */
+QDateEdit:hover {
+    background-color: #98DBC6;             /* Vert menthe légèrement plus foncé au survol */
+    border: 1px solid #388E3C;             /* Bordure plus foncée au survol */
+}
+
+/* Style pour la flèche déroulante du QDateEdit */
+QDateEdit::drop-down {
+    border: none;                          /* Pas de bordure pour le menu déroulant */
+    background-color: #81C784;             /* Fond vert moyen pour la flèche */
+    border-top-right-radius: 5px;          /* Coins arrondis en haut à droite */
+    border-bottom-right-radius: 5px;       /* Coins arrondis en bas à droite */
+    width: 20px;                           /* Largeur de la zone de la flèche */
+}
+
+/* Icône de la flèche */
+QDateEdit::down-arrow {
+    image: url(&quot;:/icons/down-arrow.png&quot;);  /* Remplacez avec le chemin de votre icône */
+    width: 10px;                           /* Largeur de l'icône */
+    height: 10px;                          /* Hauteur de l'icône */
+}
+</string>
+       </property>
+      </widget>
+      <widget class="QTextEdit" name="textEdit_10">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>70</y>
+         <width>101</width>
+         <height>51</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="html">
+        <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-weight:700; color:#ffffff;&quot;&gt;Material_ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QTextEdit" name="textEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>111</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color:black;</string>
+      </property>
+      <property name="html">
+       <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;meta charset=&quot;utf-8&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'Segoe UI'; font-size:9pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:700;&quot;&gt;Overview&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>1120</x>
+        <y>10</y>
+        <width>61</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/file.png</normaloff>../../../Downloads/file.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>20</y>
+        <width>721</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:700; color:#00aa7f; vertical-align:super;&quot;&gt;Welcome to RUBICON: Your Food Preservation Partner!&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="Stats">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>1040</x>
+        <y>140</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #E0F7FA;               /* Soft cyan background */
+    color: #004D40;                          /* Dark teal text color */
+    border-radius: 8px;                      /* Rounded corners */
+    font-size: 14px;                         /* Font size */
+    padding: 8px 16px;                       /* Comfortable padding */
+    font-weight: bold;                       /* Slightly bold text */
+    border: 1px solid #B2DFDB;               /* Light teal border */
+    /* Simulate shadow effect */
+    margin: 2px 2px;                         /* Slight offset to enhance effect */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15); /* Bottom border for shadow effect */
+}
+
+QPushButton:hover {
+    background-color: #B2EBF2;               /* Slightly darker on hover */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+QPushButton:pressed {
+    background-color: #A7D8DE;               /* Darker background on press */
+    border: 1px solid #81C784;               /* Change border color on press */
+    margin: 1px 1px;                         /* Move slightly up on press */
+    border-bottom: none;                     /* Remove shadow on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>ANALYTICS</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="delete_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>930</x>
+        <y>630</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Default Style for the Red Button */
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 rgba(255, 102, 102, 255), 
+                                      stop:1 rgba(204, 0, 0, 255));    /* Red gradient */
+    color: white;                                 /* White text */
+    border-radius: 10px;                          /* Rounded corners */
+    font-size: 15px;                              /* Font size */
+    padding: 8px 16px;                            /* Comfortable padding */
+    border: 2px solid rgba(150, 0, 0, 255);       /* Dark red border */
+}
+
+/* Pressed Effect for the Red Button */
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 rgba(204, 0, 0, 255), 
+                                      stop:1 rgba(153, 0, 0, 255));   /* Darker red on press */
+    border-color: rgba(100, 0, 0, 255);           /* Darker border when pressed */
+    padding-top: 10px;                            /* Adjust padding to simulate press */
+    padding-bottom: 4px;                          /* Adjust padding to simulate press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>DELETE</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+      </property>
+      <property name="autoRepeatInterval">
+       <number>100</number>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>false</bool>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="update2Button">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>680</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Style par défaut pour le bouton vert doux */
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 rgba(200, 255, 200, 255),  /* Vert très clair */
+                                      stop:1 rgba(120, 200, 120, 255)); /* Vert moyen */
+    color: #004D40;                              /* Texte vert foncé */
+    border-radius: 10px;                         /* Coins arrondis */
+    font-size: 15px;                             /* Taille de la police */
+    padding: 8px 16px;                           /* Espacement confortable */
+    border: 2px solid rgba(120, 200, 120, 255);  /* Bordure vert moyen */
+}
+
+/* Effet Pressé pour le bouton vert doux */
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 rgba(170, 225, 170, 255),  /* Vert un peu plus foncé */
+                                      stop:1 rgba(100, 180, 100, 255)); /* Vert plus foncé */
+    border-color: rgba(100, 180, 100, 255);       /* Bordure vert foncé en pressant */
+    padding-top: 10px;                            /* Ajustement du padding pour l’effet pressé */
+    padding-bottom: 4px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>MODIFY</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_7">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>530</x>
+        <y>140</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #E0F7FA;               /* Soft cyan background */
+    color: #004D40;                          /* Dark teal text color */
+    border-radius: 8px;                      /* Rounded corners */
+    font-size: 14px;                         /* Font size */
+    padding: 8px 16px;                       /* Comfortable padding */
+    font-weight: bold;                       /* Slightly bold text */
+    border: 1px solid #B2DFDB;               /* Light teal border */
+    /* Simulate shadow effect */
+    margin: 2px 2px;                         /* Slight offset to enhance effect */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15); /* Bottom border for shadow effect */
+}
+
+QPushButton:hover {
+    background-color: #B2EBF2;               /* Slightly darker on hover */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+QPushButton:pressed {
+    background-color: #A7D8DE;               /* Darker background on press */
+    border: 1px solid #81C784;               /* Change border color on press */
+    margin: 1px 1px;                         /* Move slightly up on press */
+    border-bottom: none;                     /* Remove shadow on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>MAILING</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_S">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>220</y>
+        <width>331</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Style général pour le QLineEdit blanc avec ombre */
+QLineEdit {
+    background-color: #FFFFFF;                /* Arrière-plan blanc */
+    color: #333333;                           /* Texte gris foncé */
+    border: 1px solid #CCCCCC;                /* Bordure principale grise claire */
+    border-radius: 5px;                       /* Coins arrondis */
+    padding: 5px 10px;                        /* Espacement interne */
+    font-size: 14px;                          /* Taille de la police */
+    
+    /* Effet de double bordure ou ombre */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), /* Ombre douce grise */
+                inset 0px 0px 0px 1px #FFFFFF;  /* Bordure blanche intérieure */
+}
+
+/* Effet de survol */
+QLineEdit:hover {
+    border: 1px solid #AAAAAA;                /* Bordure légèrement plus foncée au survol */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15), /* Ombre renforcée au survol */
+                inset 0px 0px 0px 1px #FFFFFF;  /* Bordure blanche intérieure */
+}
+
+/* Style du texte de remplacement (placeholder) */
+QLineEdit::placeholder {
+    color: #AAAAAA;                           /* Texte placeholder en gris clair */
+    font-style: italic;                       /* Italique pour le texte placeholder */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>search with ID</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>680</y>
+        <width>191</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Style général pour le QLineEdit blanc avec ombre */
+QLineEdit {
+    background-color: #FFFFFF;                /* Arrière-plan blanc */
+    color: #333333;                           /* Texte gris foncé */
+    border: 1px solid #CCCCCC;                /* Bordure principale grise claire */
+    border-radius: 5px;                       /* Coins arrondis */
+    padding: 5px 10px;                        /* Espacement interne */
+    font-size: 14px;                          /* Taille de la police */
+    
+    /* Effet de double bordure ou ombre */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1), /* Ombre douce grise */
+                inset 0px 0px 0px 1px #FFFFFF;  /* Bordure blanche intérieure */
+}
+
+/* Effet de survol */
+QLineEdit:hover {
+    border: 1px solid #AAAAAA;                /* Bordure légèrement plus foncée au survol */
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.15), /* Ombre renforcée au survol */
+                inset 0px 0px 0px 1px #FFFFFF;  /* Bordure blanche intérieure */
+}
+
+/* Style du texte de remplacement (placeholder) */
+QLineEdit::placeholder {
+    color: #AAAAAA;                           /* Texte placeholder en gris clair */
+    font-style: italic;                       /* Italique pour le texte placeholder */
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>delete with ID</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_13">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>360</x>
+        <y>140</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #E0F7FA;               /* Soft cyan background */
+    color: #004D40;                          /* Dark teal text color */
+    border-radius: 8px;                      /* Rounded corners */
+    font-size: 14px;                         /* Font size */
+    padding: 8px 16px;                       /* Comfortable padding */
+    font-weight: bold;                       /* Slightly bold text */
+    border: 1px solid #B2DFDB;               /* Light teal border */
+    /* Simulate shadow effect */
+    margin: 2px 2px;                         /* Slight offset to enhance effect */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15); /* Bottom border for shadow effect */
+}
+
+QPushButton:hover {
+    background-color: #B2EBF2;               /* Slightly darker on hover */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+QPushButton:pressed {
+    background-color: #A7D8DE;               /* Darker background on press */
+    border: 1px solid #81C784;               /* Change border color on press */
+    margin: 1px 1px;                         /* Move slightly up on press */
+    border-bottom: none;                     /* Remove shadow on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>PDF</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+      </property>
+     </widget>
+     <widget class="QTableView" name="tableView">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>280</y>
+        <width>821</width>
+        <height>271</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QTableWidget {
+    background-color: #D8F1E6;  /* Light green background for table */
+    border: 1px solid #A5D6A7;  /* Green border */
+    border-radius: 10px;        /* Rounded corners for smooth look */
+    gridline-color: #A5D6A7;    /* Color of grid lines */
+    font-size: 14px;            /* Font size for table text */
+}
+
+QHeaderView::section {
+    background-color: #A5D6A7;  /* Slightly darker green for headers */
+    color: #333333;             /* Dark gray text color for readability */
+    font-weight: bold;          /* Bold text for headers */
+    padding: 8px;               /* Padding inside header cells */
+    border-bottom: 1px solid #D8F1E6;  /* Bottom border to separate headers */
+}
+
+QTableWidget::item {
+    padding: 8px;               /* Padding inside each cell */
+    color: #333333;             /* Dark gray color for cell text */
+    selection-background-color: #B2EBF2;  /* Light cyan for selected rows */
+    selection-color: #333333;   /* Text color when row is selected */
+}
+
+QPushButton {
+    border-radius: 5px;         /* Rounded corners for buttons */
+    padding: 8px 16px;          /* Padding for buttons */
+    color: white;               /* White text color */
+    font-weight: bold;          /* Bold text for buttons */
+    font-size: 12px;            /* Font size for buttons */
+}
+
+QPushButton#modifyButton {
+    background-color: #4CAF50;  /* Green for the &quot;Modify&quot; button */
+}
+
+QPushButton#deleteButton {
+    background-color: #FF5252;  /* Red for the &quot;Delete&quot; button */
+}
+
+QPushButton#viewAllButton {
+    background-color: #B0BEC5;  /* Gray-blue for the &quot;View All&quot; button */
+}
+
+QPushButton:hover {
+    opacity: 0.9;               /* Slight fade effect on hover */
+}
+
+QPushButton:pressed {
+    background-color: #388E3C;  /* Darker green when the &quot;Modify&quot; button is pressed */
+    border: 1px solid #2E7D32;  /* Darker border on press for the &quot;Modify&quot; button */
+}
+
+</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="updateButton">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>670</x>
+        <y>630</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Style par défaut pour le bouton vert doux */
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 rgba(200, 255, 200, 255),  /* Vert très clair */
+                                      stop:1 rgba(120, 200, 120, 255)); /* Vert moyen */
+    color: #004D40;                              /* Texte vert foncé */
+    border-radius: 10px;                         /* Coins arrondis */
+    font-size: 15px;                             /* Taille de la police */
+    padding: 8px 16px;                           /* Espacement confortable */
+    border: 2px solid rgba(120, 200, 120, 255);  /* Bordure vert moyen */
+}
+
+/* Effet Pressé pour le bouton vert doux */
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 rgba(170, 225, 170, 255),  /* Vert un peu plus foncé */
+                                      stop:1 rgba(100, 180, 100, 255)); /* Vert plus foncé */
+    border-color: rgba(100, 180, 100, 255);       /* Bordure vert foncé en pressant */
+    padding-top: 10px;                            /* Ajustement du padding pour l’effet pressé */
+    padding-bottom: 4px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>FETCH</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBox_10">
+      <property name="geometry">
+       <rect>
+        <x>480</x>
+        <y>690</y>
+        <width>161</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* General Style for QComboBox */
+QComboBox {
+    background-color: #A8E6CF;             /* Soft mint green for the main background */
+    color: #004D40;                        /* Dark teal text color */
+    border: 1px solid #81C784;             /* Soft green border */
+    border-radius: 5px;                    /* Rounded corners */
+    padding: 5px 10px;                     /* Inner padding for text */
+    font-size: 14px;                       /* Font size */
+}
+
+/* Dropdown Arrow Style */
+QComboBox::drop-down {
+    border: none;                          /* Remove border around the dropdown arrow */
+    background-color: #81C784;             /* Light green background for the arrow area */
+    border-top-right-radius: 5px;          /* Rounded top right corner */
+    border-bottom-right-radius: 5px;       /* Rounded bottom right corner */
+    width: 25px;                           /* Width of the dropdown area */
+}
+
+/* Arrow Icon */
+QComboBox::down-arrow {
+    image: url(&quot;:/icons/down-arrow.png&quot;);  /* Replace with the path to your arrow icon */
+    width: 12px;                           /* Icon width */
+    height: 12px;                          /* Icon height */
+}
+
+/* Style for Dropdown Items */
+QComboBox QAbstractItemView {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 #E8F5E9, 
+                                      stop:1 #A5D6A7);  /* Light gradient green for dropdown */
+    border: 1px solid #66BB6A;             /* Medium green border */
+    selection-background-color: #66BB6A;   /* Highlighted green for selected item */
+    selection-color: white;                /* White text for selected item */
+    color: #004D40;                        /* Dark teal text for items */
+}
+
+/* Hover Effect */
+QComboBox:hover {
+    background-color: #98DBC6;             /* Slightly darker mint green on hover */
+    border: 1px solid #388E3C;             /* Darker border on hover */
+}
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>Material_ID</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Material Type</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Quantity in Stock</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QPushButton" name="pushButton_8">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>140</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #E0F7FA;               /* Soft cyan background */
+    color: #004D40;                          /* Dark teal text color */
+    border-radius: 8px;                      /* Rounded corners */
+    font-size: 14px;                         /* Font size */
+    padding: 8px 16px;                       /* Comfortable padding */
+    font-weight: bold;                       /* Slightly bold text */
+    border: 1px solid #B2DFDB;               /* Light teal border */
+    /* Simulate shadow effect */
+    margin: 2px 2px;                         /* Slight offset to enhance effect */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15); /* Bottom border for shadow effect */
+}
+
+QPushButton:hover {
+    background-color: #B2EBF2;               /* Slightly darker on hover */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+QPushButton:pressed {
+    background-color: #A7D8DE;               /* Darker background on press */
+    border: 1px solid #81C784;               /* Change border color on press */
+    margin: 1px 1px;                         /* Move slightly up on press */
+    border-bottom: none;                     /* Remove shadow on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>CALENDAR</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_10">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>870</x>
+        <y>140</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #E0F7FA;               /* Soft cyan background */
+    color: #004D40;                          /* Dark teal text color */
+    border-radius: 8px;                      /* Rounded corners */
+    font-size: 14px;                         /* Font size */
+    padding: 8px 16px;                       /* Comfortable padding */
+    font-weight: bold;                       /* Slightly bold text */
+    border: 1px solid #B2DFDB;               /* Light teal border */
+    /* Simulate shadow effect */
+    margin: 2px 2px;                         /* Slight offset to enhance effect */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.15); /* Bottom border for shadow effect */
+}
+
+QPushButton:hover {
+    background-color: #B2EBF2;               /* Slightly darker on hover */
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25); /* Stronger shadow on hover */
+}
+
+QPushButton:pressed {
+    background-color: #A7D8DE;               /* Darker background on press */
+    border: 1px solid #81C784;               /* Change border color on press */
+    margin: 1px 1px;                         /* Move slightly up on press */
+    border-bottom: none;                     /* Remove shadow on press */
+}
+</string>
+      </property>
+      <property name="text">
+       <string>NOTIFICATIONS</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="updateButton_2">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>630</y>
+        <width>171</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Segoe UI Variable Display Semib</family>
+        <pointsize>-1</pointsize>
+        <italic>false</italic>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* Style par défaut pour le bouton vert doux */
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 rgba(200, 255, 200, 255),  /* Vert très clair */
+                                      stop:1 rgba(120, 200, 120, 255)); /* Vert moyen */
+    color: #004D40;                              /* Texte vert foncé */
+    border-radius: 10px;                         /* Coins arrondis */
+    font-size: 15px;                             /* Taille de la police */
+    padding: 8px 16px;                           /* Espacement confortable */
+    border: 2px solid rgba(120, 200, 120, 255);  /* Bordure vert moyen */
+}
+
+/* Effet Pressé pour le bouton vert doux */
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, 
+                                      stop:0 rgba(170, 225, 170, 255),  /* Vert un peu plus foncé */
+                                      stop:1 rgba(100, 180, 100, 255)); /* Vert plus foncé */
+    border-color: rgba(100, 180, 100, 255);       /* Bordure vert foncé en pressant */
+    padding-top: 10px;                            /* Ajustement du padding pour l’effet pressé */
+    padding-bottom: 4px;
+}
+</string>
+      </property>
+      <property name="text">
+       <string>SORT</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_2">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>850</y>
+       <width>83</width>
+       <height>29</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string>Logout</string>
+     </property>
+     <property name="icon">
+      <iconset theme="QIcon::ThemeIcon::SystemShutdown">
+       <normaloff>.</normaloff>.</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>850</y>
+       <width>21</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../../152534.png</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>130</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI Variable Display Semib</family>
+       <pointsize>-1</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/* Default Style for the Button */
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(200, 200, 200, 255));
+    color: Black;                        /* Black text */
+    border-radius: 10px;                 /* Rounded corners */
+    font-size: 15px;                     /* Font size */
+    padding: 8px 16px;                   /* Comfortable padding */
+    border: 2px solid rgba(150, 150, 150, 255); /* Light gray border */
+}
+
+/* Pressed Effect for the Button */
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(200, 200, 200, 255), stop:1 rgba(150, 150, 150, 255));
+    border-color: rgba(100, 100, 100, 255);    /* Darker border when pressed */
+    padding-top: 10px;                        /* Adjust padding to simulate press */
+    padding-bottom: 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Client</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>270</y>
+       <width>181</width>
+       <height>51</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Segoe UI Variable Display Semib</family>
+       <pointsize>-1</pointsize>
+       <italic>false</italic>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">/* Default Style for the Button */
+QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(255, 255, 255, 255), stop:1 rgba(200, 200, 200, 255));
+    color: Black;                        /* Black text */
+    border-radius: 10px;                 /* Rounded corners */
+    font-size: 15px;                     /* Font size */
+    padding: 8px 16px;                   /* Comfortable padding */
+    border: 2px solid rgba(150, 150, 150, 255); /* Light gray border */
+}
+
+/* Pressed Effect for the Button */
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(200, 200, 200, 255), stop:1 rgba(150, 150, 150, 255));
+    border-color: rgba(100, 100, 100, 255);    /* Darker border when pressed */
+    padding-top: 10px;                        /* Adjust padding to simulate press */
+    padding-bottom: 4px;
+}
+</string>
+     </property>
+     <property name="text">
+      <string>Delivery</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../../../Downloads/group.png</normaloff>../../../Downloads/group.png</iconset>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
