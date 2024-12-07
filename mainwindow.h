@@ -17,6 +17,8 @@
 
 #include <QMap>
 #include <QWidget>
+#include "arduino.h"
+#include <QSerialPort>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -47,6 +49,8 @@ private slots:
 
     void afficherStatistiquesLivraisons();
 
+   void handleArduinoData();
+
 
     void on_tableView_clicked(const QModelIndex &index);
 
@@ -55,6 +59,7 @@ private:
     Ui::MainWindow *ui;
     Livraison livraison;
     QSqlQueryModel *model;
+    Arduino arduino;
 };
 
 #endif // MAINWINDOW_H

@@ -9,14 +9,24 @@
 #include <QVBoxLayout>  // Ajout pour le layout
 #include "livraison.h"
 #include <QPainter>
-
-
+#include "arduino.h"
+#include <QDebug>
+#include <QSqlError>
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
     , model(new QSqlQueryModel(this))
 {
     ui->setupUi(this);
+
+    if (arduino.connectToArduino()) {
+        connect(arduino.serial, &QSerialPort::readyRead, this, &MainWindow::handleArduinoData);
+    } else {
+        qDebug() << "Impossible de connecter à l'Arduino.";
+    }
+
+
+
     ui->tableView->setModel(livraison.afficher()); // Display all records on app start
     connect(ui->stat_2, &QPushButton::clicked, this, &MainWindow::afficherStatistiquesLivraisons);
 
@@ -456,5 +466,55 @@ void MainWindow::on_tableView_clicked(const QModelIndex &index)
     }
 
 }
+
+
+void MainWindow::handleArduinoData() {
+    QString id = arduino.readData();  // Read data received from Arduino
+    qDebug() << "ID reçu de l'Arduino:" << id;
+
+    if (!id.isEmpty()) {
+        ui->usernameLineEdit->setText(id);  // Display the ID in the UI
+
+        QSqlQuery query;
+        query.prepare("SELECT MDP, NOM, PRENOM FROM Employe WHERE ID_EMPLOYE = :id");
+        query.bindValue(":id", id);
+
+        if (!query.exec()) {
+            qDebug() << "Erreur lors de l'exécution de la requête SELECT:" << query.lastError().text();
+        } else if (query.next()) {
+            QString mdp = query.value("MDP").toString();
+            QString nom = query.value("NOM").toString();
+            QString prenom = query.value("PRENOM").toString();
+
+            qDebug() << "Employé trouvé:" << nom << prenom << "MDP:" << mdp;
+
+            // Update the UI with employee data
+            ui->passwordLineEdit->setText(mdp);
+
+            // Update employee presence in the database
+            QSqlQuery updateQuery;
+            updateQuery.prepare("UPDATE Employe SET presence = 'present' WHERE ID_EMPLOYE = :id");
+            updateQuery.bindValue(":id", id);
+            if (!updateQuery.exec()) {
+                qDebug() << "Erreur lors de la mise à jour de la présence:" << updateQuery.lastError().text();
+            } else {
+                qDebug() << "Présence mise à jour pour l'ID:" << id;
+            }
+
+            // Send the message starting with "Bienvenue"
+            QString message = QString("Bienvenue %1 %2").arg(nom).arg(prenom);
+            arduino.sendData(message);
+            qDebug() << "Message envoyé à l'Arduino:" << message;
+
+        } else {
+            // If the employee is not found
+            qDebug() << "Employé non trouvé pour l'ID:" << id;
+            arduino.sendData("Employe non trouve");
+        }
+    } else {
+        qDebug() << "Aucun ID reçu de l'Arduino.";
+    }
+}
+
 
 

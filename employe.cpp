@@ -67,7 +67,9 @@ bool Employe::login(const QString &username, const QString &password)
 
 void Employe::sendSMS(const QString &telephone, const QString &message) {
 
-    ////////
+    QString accountSID = "ACea2351ba245f618a38d11e1ce8b63780";
+    QString authToken = "6cb138059be40f326596236e17f90d91";
+    QString fromPhoneNumber = "+12566394518";
 
 
     QUrl url("https://api.twilio.com/2010-04-01/Accounts/" + accountSID + "/Messages.json");
@@ -110,8 +112,8 @@ bool Employe::inscrire(int ID_EMPLOYE, const QString& NOM, const QString& PRENOM
     QSqlQuery query;
 
     // Préparation de la requête SQL pour insérer les données
-    query.prepare("INSERT INTO Employe (ID_EMPLOYE, NOM, PRENOM, POSTE, TELEPHONE, MDP) "
-                  "VALUES (:ID_EMPLOYE, :NOM, :PRENOM, :POSTE, :TELEPHONE, :MDP)");
+    query.prepare("INSERT INTO Employe (ID_EMPLOYE, NOM, PRENOM, POSTE, TELEPHONE, MDP, presence) "
+                  "VALUES (:ID_EMPLOYE, :NOM, :PRENOM, :POSTE, :TELEPHONE, :MDP, 'absent')");
 
     // Liaison des valeurs aux paramètres
     query.bindValue(":ID_EMPLOYE", ID_EMPLOYE);
@@ -124,6 +126,7 @@ bool Employe::inscrire(int ID_EMPLOYE, const QString& NOM, const QString& PRENOM
     // Exécution de la requête et retour du résultat
     return query.exec();
 }
+
 
 int Employe::genererIdUnique() {
     int id;

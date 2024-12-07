@@ -2,22 +2,20 @@
 #define ARDUINO_H
 
 #include <QSerialPort>
-#include <QSerialPortInfo>
-#include <QByteArray>
+#include <QString>
 
 class Arduino {
 public:
     Arduino();
     ~Arduino();
-    int connectToArduino();
-    QByteArray readFromArduino();
-    void writeToArduino(const QByteArray &data);
-    QSerialPort *getSerial() const;
 
-private:
+    bool connectToArduino();
+    QString readData();
+    void sendData(const QString &data);
+
+
+
     QSerialPort *serial;
-    QString portName;
-    bool isAvailable;
 };
 
 #endif // ARDUINO_H
