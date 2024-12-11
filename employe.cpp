@@ -67,9 +67,7 @@ bool Employe::login(const QString &username, const QString &password)
 
 void Employe::sendSMS(const QString &telephone, const QString &message) {
 
-    QString accountSID = "ACea2351ba245f618a38d11e1ce8b63780";
-    QString authToken = "6cb138059be40f326596236e17f90d91";
-    QString fromPhoneNumber = "+12566394518";
+    
 
 
     QUrl url("https://api.twilio.com/2010-04-01/Accounts/" + accountSID + "/Messages.json");
